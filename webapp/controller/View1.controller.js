@@ -4,6 +4,8 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("com.danone.TravisTest.controller.View1", {
-
+		testFunction: function() {
+			alert("test");
+		}
 	});
 });
