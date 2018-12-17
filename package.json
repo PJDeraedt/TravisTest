@@ -10,10 +10,9 @@
     "karma-qunit": "^1.2.1",
     "qunitjs": "^2.4.1",
     "chrome-headless": "0.1.5",
-    "karma-headless-chrome-launcher": "0.0.6",
-    "start-server-and-test": "^1.4.1"
+    "karma-headless-chrome-launcher": "0.0.6"
   },
   "scripts": {
-    "test": "start-server-and-test start http://localhost:8080 karma-ci"
+    "test": "./node_modules/.bin/karma start karma-ci.conf.js"
   }
 }
