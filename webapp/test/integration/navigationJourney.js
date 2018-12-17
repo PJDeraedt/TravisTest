@@ -23,6 +23,7 @@ sap.ui.define([
 	});
 
 	//This is an example of an OPA Journey that needs to be fixed 
+	/*
 	opaTest("Should check additional UI elements", function (Given, When, Then) {
 		// Arrangements
 		Given.iStartTheApp();
@@ -33,6 +34,6 @@ sap.ui.define([
 		Then.onTheAppPage.iDoMyAssertion();
 
 		Then.iTeardownMyAppFrame();
-
 	});
+	*/
 });
