@@ -5,10 +5,10 @@
   "private": true,
   "devDependencies": {
     "grunt-sapui5": "1.4.0",
-    "karma": "~0.8"
+    "karma": "~0.8",
+    "@sap/grunt-sapui5-bestpractice-test": "2.0.0"
   },
   "scripts": {
-   "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
   }
 }
-
