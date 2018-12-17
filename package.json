@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "devDependencies": {
-    "grunt-sapui5": "1.4.0"
+    "grunt-sapui5": "1.4.0",
+    "karma": "~0.8"
   },
   "scripts": {
    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
