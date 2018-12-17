@@ -4,7 +4,6 @@
   "description": "",
   "private": true,
   "dependencies": {
-    "grunt-sapui5": "1.4.0",
     "karma": "3.1.3",
     "phantomjs-prebuilt": "2.1.16",
     "karma-phantomjs-launcher": "1.0.4"

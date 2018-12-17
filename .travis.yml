@@ -3,9 +3,6 @@ language: node_js
 node_js:
   - 'stable'
 
-before_script:
-  - npm config set package-lock false
-
 before_deploy:
   - npm test
 
