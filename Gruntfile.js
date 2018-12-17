@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
 	"use strict";
-	grunt.loadNpmTasks("grunt-sapui5");
 	/*
+	grunt.loadNpmTasks("grunt-sapui5");
 	grunt.loadNpmTasks("@sap/grunt-sapui5-bestpractice-test");
 	grunt.registerTask("unit_and_integration_tests", ["test"]);
 	grunt.config.merge({
