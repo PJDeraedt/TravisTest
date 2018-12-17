@@ -4,7 +4,7 @@ node_js:
   - 'stable'
 
 before_deploy:
-  - npm karma test
+  - npm test
 
 deploy:
   provider: script
