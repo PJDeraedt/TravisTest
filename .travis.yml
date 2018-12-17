@@ -4,6 +4,7 @@ node_js:
   - 'stable'
 
 before_deploy:
+  - npm install --package-lock
   - npm test
 
 deploy:
