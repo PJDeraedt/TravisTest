@@ -9,10 +9,10 @@
     "karma-openui5": "^0.2.3",
     "karma-qunit": "^1.2.1",
     "qunitjs": "^2.4.1",
-    "chrome-headless": "0.1.5",
-    "karma-headless-chrome-launcher": "0.0.6"
+    "phantomjs-prebuilt": "2.1.16",
+    "karma-phantomjs-launcher": "1.0.4"
   },
   "scripts": {
-    "test": "./node_modules/.bin/karma start karma-ci.conf.js"
+    "test": "./node_modules/.bin/karma start karma-ci.conf"
   }
 }
