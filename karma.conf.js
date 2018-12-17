@@ -7,8 +7,9 @@ module.exports = function(config) {
 
 		// frameworks to use
 		// available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-		frameworks: ['qunit', 'openui5'],
+		frameworks: ['qunit'],
 
+		/*
 		openui5: {
 			path: 'http://localhost:8080/resources/sap-ui-core.js'
 		},
@@ -33,7 +34,12 @@ module.exports = function(config) {
 				showUI: true
 			}
 		},
-
+		*/
+		
+		// preprocess matching files before serving them to the browser
+    	// available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+		preprocessors: { '*.js': ['coverage'] },
+    
 		// list of files / patterns to load in the browser
 		files: [
 			{ pattern: '**', included: false, served: true, watched: true }
@@ -42,7 +48,7 @@ module.exports = function(config) {
 		// test results reporter to use
 		// possible values: 'dots', 'progress'
 		// available reporters: https://npmjs.org/browse/keyword/karma-reporter
-		reporters: ['progress'],
+		reporters: ['progress','coverage'],
 
 		// level of logging
 		// possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
@@ -63,6 +69,5 @@ module.exports = function(config) {
 		// Continuous Integration mode
 		// if true, Karma captures browsers, runs the tests and exits
 		singleRun: true
-
 	});
 };
