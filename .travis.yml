@@ -3,8 +3,8 @@ language: node_js
 node_js:
   - 'stable'
 
-before_deploy:
-  - npm test
+#before_deploy:
+#  - npm test
 
 deploy:
   provider: script
@@ -13,3 +13,4 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
+    

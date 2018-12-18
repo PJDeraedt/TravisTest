@@ -1,0 +1,14 @@
+_schema-version: "2.1"
+
+ID: com.danone.travistest
+version: "0.1.2"
+
+parameters: 
+  hcp-deployer-version: '1.0'
+
+modules:
+  - name: travistest
+    type: com.sap.hcp.html5
+    parameters:
+       name: travistest
+       version: 1.0.18-${timestamp}
