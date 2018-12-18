@@ -1,17 +1,14 @@
 // Karma configuration
+
 module.exports = function(config) {
 	require("./karma.conf")(config);
 	config.set({
-		
-		basePath: 'webapp',
-		
+
 		// preprocess matching files before serving them to the browser
 		// available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
 		preprocessors: {
 			'{,!(test)}/*.js': ['coverage']
 		},
-
-		frameworks: ['qunit'],
 
 		coverageReporter: {
 			includeAllSources: true,
@@ -47,7 +44,7 @@ module.exports = function(config) {
 
 		// start these browsers
 		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-		browsers: ['PhantomJS'],
+		browsers: ['ChromeHeadless'],
 
 		// Continuous Integration mode
 		// if true, Karma captures browsers, runs the tests and exits

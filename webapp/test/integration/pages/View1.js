@@ -6,7 +6,7 @@ sap.ui.define([
 	"use strict";
 	var sViewName = "View1";
 	Opa5.createPageObjects({
-		onTheAppPage: {
+		onView1Page: {
 			baseClass: Common,
 
 			actions: {

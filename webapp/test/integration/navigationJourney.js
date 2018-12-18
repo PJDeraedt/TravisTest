@@ -13,12 +13,10 @@ sap.ui.define([
 		// Arrangements
 		Given.iStartTheApp();
 
-		//Actions
-		When.onTheAppPage.iLookAtTheScreen();
 		// Assertions
-		Then.onTheAppPage.iShouldSeeTheApp();
+		Then.onView1Page.iShouldSeeTheApp();
 
-		Then.iTeardownMyAppFrame();
+		Then.onView1Page.iTeardownTheApp();
 
 	});
 
@@ -29,9 +27,9 @@ sap.ui.define([
 		Given.iStartTheApp();
 
 		//Actions
-		When.onTheAppPage.iDoMyAction();
+		When.onView1Page.iDoMyAction();
 		// Assertions
-		Then.onTheAppPage.iDoMyAssertion();
+		Then.onView1Page.iDoMyAssertion();
 
 		Then.iTeardownMyAppFrame();
 	});
